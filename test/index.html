@@ -1,0 +1,94 @@
+<!doctype html>
+<html ng-app="aceApp">
+  <head>
+    <title>Angular-Ace Example</title>
+    <meta charset="utf-8">
+    <script src="../app/bower_components/angular/angular.min.js"></script>
+    <script src="../app/bower_components/jquery/jquery.min.js"></script>
+    <script src="../app/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../app/bower_components/ace-builds/src-min-noconflict/ace.js"></script>  
+    <script src="../app/bower_components/ace-builds/src-min-noconflict/mode-javascript.js"></script>  
+    <script src="../app/bower_components/ace-builds/src-min-noconflict/mode-markdown.js"></script>  
+    <script src="../lib/angular-ace.js"></script>  
+    <script src="controller.js"></script>
+    
+    <link rel="stylesheet" href="../app/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<style type='text/css'>
+    .ace-editor {
+        height: 100px;
+    }
+    textarea {
+        height: 100px;
+        min-height: 100px;
+        resize: none;
+    }
+    .container {
+        padding: 20px;
+
+    }
+</style>
+</head>
+
+<body ng-controller="AceCtrl">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="nav navbar navbar-default">
+                <span class="navbar-text">Angular-Ace Demo</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Editor without initialize callback</div>
+                <div class="panel-body">
+                    <div class="col-xs-6 panel">
+                        <div class="ace-editor" ace ng-model="editorData1"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <textarea class="form-control" ng-model="editorData1"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Editor with initialize callback <em>initEditor2</em></div>
+                <div class="panel-body">
+                    <div class="col-xs-6 panel">
+                        <div class="ace-editor" ace="initEditor2" ng-model="editorData2"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <textarea class="form-control" ng-model="editorData2"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Editor with initialize callback <em>initEditor3</em></div>
+                <div class="panel-body">
+                    <div class="col-xs-6 panel">
+                        <div class="ace-editor" ace="initEditor3" ng-model="editorData3"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <textarea class="form-control" ng-model="editorData3"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+  
+</html>
