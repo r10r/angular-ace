@@ -1,10 +1,13 @@
 {
   "name": "angular-ace",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "main" : "lib/angular-ace.js",
   "dependencies": {
     "angular": "~1.2.8",
     "jquery": "~1.10.2",
-    "ace-builds": "~1.1.1",
+    "ace-builds": "~1.1.1"
+  },
+  "devDependencies": {
     "bootstrap": "~3.0.3"
   }
 }
