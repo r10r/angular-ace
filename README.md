@@ -2,11 +2,12 @@ About
 ====================
 A angular directive to create a data-binding to the content of the [Ace Editor](http://ace.c9.io).
 
+* Dependencies see [bower.json](bower.json).
+
 Getting Started
 --------------------
-* Dependencies see [bower.json](bower.json).
 * Run `bower install` to install dependencies.
-* Example see [test/index.html](test/index.html).
+* Open example [test/index.html](test/index.html) in your browser.
 
 ### Editor Definition In View
 ```html
